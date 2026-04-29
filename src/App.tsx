@@ -1,16 +1,19 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-// import GaloLogo from './assets/Galo.png'
+// import heroImg from './assets/hero.png'
+import GaloLogo from './assets/Galo.jpg'
+// import GaloLogo from './assets/NaoExiste.png'   // CD
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  // const variavelSemUso = "QUEBROU O CI"
+
   return (
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={GaloLogo} className="base" width="170" height="179" alt="" />
         </div>
         <div>
           <h1>O melhor projeto</h1>

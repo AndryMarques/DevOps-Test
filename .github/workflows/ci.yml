@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
     # Avisa o robô que os comandos devem ser rodados dentro da subpasta!
     defaults:
@@ -24,6 +24,9 @@ jobs:
 
     - name: 📦 Instalando dependências
       run: npm install
+
+    - name: 🔍 Verificando qualidade do código (Lint)
+      run: npm run lint
 
     - name: 🏗️ Testando o Build do projeto
       run: npm run build
