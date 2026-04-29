@@ -8,11 +8,6 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-    # Avisa o robô que os comandos devem ser rodados dentro da subpasta!
-    defaults:
-      run:
-        working-directory: ./DevOps-test
-
     steps:
     - name: 📥 Clonando o repositório
       uses: actions/checkout@v4
