@@ -2,29 +2,28 @@ name: CI Pipeline - Validação de Código
 
 on:
   push:
-    branches: [ "main" ] # Roda sempre que houver código novo na main
-  pull_request:
     branches: [ "main" ]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest # Roda em um servidor Linux virtual gratuito
+    runs-on: ubuntu-latest 
+
+    # Avisa o robô que os comandos devem ser rodados dentro da subpasta!
+    defaults:
+      run:
+        working-directory: ./DevOps-test
 
     steps:
-    # 1. Baixa o seu código para o servidor virtual
     - name: 📥 Clonando o repositório
       uses: actions/checkout@v4
 
-    # 2. Prepara o ambiente instalando o Node.js
     - name: ⚙️ Configurando o Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
 
-    # 3. Instala as bibliotecas do seu projeto (Vite, React, etc)
     - name: 📦 Instalando dependências
       run: npm install
 
-    # 4. Tenta compilar o projeto (Se tiver erro de código, o pipeline falha aqui)
     - name: 🏗️ Testando o Build do projeto
       run: npm run build
