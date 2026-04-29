@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  // const variavelSemUso = "QUEBROU O CI"
+  const variavelSemUso = "QUEBROU O CI"
 
   return (
     <>
