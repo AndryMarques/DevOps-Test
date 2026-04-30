@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-// import Logo from './assets/Galo.png'
+// import heroImg from './assets/hero.png'
+import Logo from './assets/Galo.png'
 // import Logo from './assets/NaoExiste.png'   // CD
 import './App.css'
 
@@ -13,7 +13,7 @@ function App() {
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={Logo} className="base" width="170" height="179" alt="" />
         </div>
         <div>
           <h1>O melhor projeto</h1>
