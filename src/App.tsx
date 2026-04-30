@@ -1,13 +1,13 @@
 import { useState } from 'react'
 // import heroImg from './assets/hero.png'
-// import Logo from './assets/Galo.png'
+import Logo from './assets/Galo.png'
 // import Logo from './assets/NaoExiste.png'   // CD
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  // const variavelSemUso = "QUEBROU O CI"
+  const variavelSemUso = "QUEBROU O CI"
 
   return (
     <>
