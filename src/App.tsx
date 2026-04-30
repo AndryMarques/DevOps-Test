@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import heroImg from './assets/hero.png'
-import Logo from './assets/Galo.png'
+// import Logo from './assets/Galo.png'
 // import Logo from './assets/NaoExiste.png'   // CD
 import './App.css'
 
